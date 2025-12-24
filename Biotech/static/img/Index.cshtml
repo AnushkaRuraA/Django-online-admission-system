@@ -1,0 +1,653 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!-- this is a Silder -->
+<div class="row">
+    <div class="col-sm-12 p-0">
+        
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                @foreach (var item in ViewBag.SilderImg)
+                {
+
+
+                <div class="carousel-item active">
+                    <img src="~/SilderImages/@item.Image" height="550vh" class="d-block w-100 x" alt="...">
+                    <div class="carousel-caption">
+
+                        <div class="box text-start p-4"
+                             style=" margin-top: -420px; margin-left: -170px; width:70%; background-color: rgba(13, 105, 196, 0.689);">
+
+                            <h5 style="font-size: 50px;" class="fw-bold ">@item.heading</h5>
+                            <p>
+                                @item.text
+                            </p>
+                            <button style="background-color: rgb(8, 169, 8); border:0px; padding: 10px; color:white;">
+                                Explore Now
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+                }
+                @*<div class="carousel-item">
+                    <img src="~/Content/silder4.jpg" height="550vh" class="d-block w-100 x " alt="...">
+                    <div class="carousel-caption">
+
+                        <div class="box text-start p-4"
+                             style=" margin-top: -410px; margin-left: -170px; width:70%; background-color: rgba(13, 105, 196, 0.689);">
+
+                            <h5 style="font-size: 50px;" class="fw-bold">Welcome To Biotech Park Lucknow</h5>
+                            <p>
+                                Bio Tech Park is India's top research center, leading in biotechnology and scientific advancements.
+                            </p>
+                            <button style="background-color: rgb(8, 169, 8); border:0px; padding: 10px; color:white;">
+                                Explore Now
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="carousel-item">
+                    <img src="~/Content/silder.jpg" height="550vh" class="d-block w-100 x" alt="...">
+                    <div class="carousel-caption">
+
+                        <div class="box text-start p-4"
+                             style=" margin-top: -420px; margin-left: -170px; width:70%; background-color: rgba(13, 105, 196, 0.689);">
+
+                            <h5 style="font-size:35px;" class="fw-bold">ISO 9001, 14001 & 22000 Certified NABL Accreditated , Ayush Recognised</h5>
+                            <p>
+                                Bio Tech Park is India's top research center, leading in biotechnology and scientific advancements.
+                            </p>
+                            <button style="background-color: rgb(8, 169, 8); border:0px; padding: 10px; color:white; x">
+                                Explore Now
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>*@
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- this is a Silder --><!-- This is Carve Shape -->
+<div class="row scape" style="background-image: url(../Content/images/image.png); height: 200px; position: relative; margin-top: -140px;"></div>
+<!-- This is Carve Shape -->
+<div class="row" style="margin-top:-40px;">
+    <div class="col-md-1"></div>
+    <div class="col-2 sp1 my-auto p-2 ra1" style="z-index: 999; background-color: rgb(18, 121, 5); "><h5><span style="  color: white; padding: 10px; ">Announcement</span></h5></div>
+   
+        <div class="col-7 sp2 my-auto p-2 ra2" style=" background-color: rgb(4, 89, 209); z-index:999; padding: 6px; ">
+
+            <p class="my-auto"><span style=" color: white; border: 1px solid transparent" class="my-auto"><marquee  direction="left" onmouseover="stop()" onmouseout="start()">
+    @foreach (var item in ViewBag.Announcements)
+    {
+        <img src="~/Content/images/new1.gif"height="15" /><span>@item.notification</span>  <a href="@item.link" style=" color:white" class="fw-bold" target="_blank">Register here</a>
+    }
+    </marquee></span></p>
+        </div>
+   
+
+    <!-- fasility section-->
+    <!-- This is Carve Shape -->
+    <!-- fasility section-->
+    <div class="" style="margin-top: -140px; padding-top:160px">
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-12 mt-2 ">
+                    <h2 class="mt-5">
+                        <span class="border-line1 border-line" style=" padding-bottom:10px;">
+                            We Cover
+                            The
+                        </span> Whole Spectrum
+                    </h2>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 p-3 pb-0">
+
+                        <section class="splide" id="slider1"
+                                 aria-labelledby="carousel-heading">
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    <div class="splide__slide p-3 pt-3">
+
+                                        <div class="col">
+                                            <div class="card text-center shadow-lg h-100" style=" border-radius: 10px;">
+                                                <img src="~/Content/images/clean.jpg" class="card-img-top w1" style="" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title wt1" style="color:rgb(46, 150, 247); ">Clean Environment</h5>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="splide__slide p-3 pb-5">
+                                        <div class="card text-center shadow-lg carda h-100" style=" border-radius:10px;">
+                                            <img src="~/Content/images/infra.jpg" height="215px" style="" class="card-img-top w1"
+                                                 alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title wt1" style="color:rgb(46, 150, 247); ">Modern Infrastructure</h5>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="splide__slide p-3 pb-5">
+                                        <div class="card spctrum text-center shadow-lg carda h-100" style=" border-radius: 10px;">
+                                            <img src="~/Content/images/hitech.jpeg" height="215px" class="card-img-top w1" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title wt1" style="color:rgb(46, 150, 247); ">Hi-Tech Laboratories</h5>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="splide__slide p-3 pb-5">
+                                        <div class="card text-center shadow-lg carda h-100" style=" border-radius: 10px;">
+                                            <img src="~/Content/images/skill.jpeg" height="215px" class="card-img-top w1" style="" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title wt1" style="color:rgb(46, 150, 247); ">Skill Development</h5>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fasility section -->
+    <!-- this is About Us-->
+    <div class="row bg-color mt-5">
+        <div class="container">
+            <div class="row  p-5 ppp">
+                <div class="col-lg-6 w100 text-light">
+                    <h3>About Biotech Park</h3>
+                    <hr>
+                    <p style="text-align: justify; color:white; font-family: sans-serif;">
+                        Welcome to Bio Tech Lucknow, India’s premier research center dedicated to pioneering advancements in biotechnology. As the nation’s number one research hub, we are at the forefront of innovative scientific research, driving breakthroughs that shape the future of healthcare, agriculture, and environmental sustainability.
+
+                        Our state-of-the-art facilities and world-class laboratories are staffed by a team of distinguished scientists and researchers committed to excellence. At Bio Tech Lucknow, we focus on cutting-edge research in genomics, bioinformatics, and molecular biology, striving to translate scientific discoveries into practical solutions that benefit society.
+
+                        We pride ourselves on fostering a collaborative environment that encourages creativity and innovation. Our partnerships with leading academic institutions, industry leaders, and government agencies enable us to stay ahead in the rapidly evolving field of biotechnology.
+
+                        Join us in our mission to push the boundaries of science and improve the quality of life through groundbreaking research and sustainable technological advancements. Bio Tech Lucknow is not just a research center; it is a beacon of progress and a catalyst for change in the biotech landscape of India.
+                    </p>
+                </div>
+                <div class="col-lg-6 p-2 mt-4 w100">
+                    <iframe width="90%" class="rop" height="400" src="https://www.youtube.com/embed/n4XnjmavROw?si=xyklZkVLgmroA0bU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- this is About Us  -->
+    <!-- our Board Member -->
+    <div class="container mt-5">
+        <div class="row mt-4">
+            <div>
+                <div class="container">
+                    <div class="col-sm-12">
+                        <span style="font-size: 40px; font-weight: 500;"
+                              class="">
+                            <span style="border-bottom: 4px solid rgb(46, 150, 247); font-weight:500; padding-bottom:5px; ">Our </span> Mentors
+
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-4 mt-4 g-4">
+                    <div class="col-md-3 tm hello w501 w100">
+                        <div class="card  h-100 shadow rounded-0 p-2" style="">
+                            <img src="~/Content/images/Govermer.jpg" class="card-img-top rounded-circle p-2 h-100" height="280px"
+                                 style="border: 1px solid rgb(12, 209, 104);" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fw-bold" style="color:rgb(46, 150, 247);">Shri Anandiben Patel</h5>
+                                <p class="card-text text-center fw-bold">Hon’ble Governor <br />Uttar Pradesh</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 tm hello w501 w100">
+                        <div class="card h-100 shadow rounded-0 p-2" style="">
+                            <img src="~/Content/images/yogiji.jpg" class="card-img-top rounded-circle p-2 h-100" height="280px"
+                                 style="border: 1px solid rgb(12, 209, 104);" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fw-bold" style="color:rgb(46, 150, 247);"> Shri Yogi Adityanath</h5>
+                                <p class="card-text text-center fw-bold">Hon’ble Chief Minister<br />Uttar Pradesh</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 tm hello w501w100">
+                        <div class="card h-100 shadow rounded-0 p-2" style="">
+                            <img src="~/Content/images/Minister2.jpg" class="card-img-top rounded-circle p-2 h-100" height="280px"
+                                 style="border: 1px solid rgb(12, 209, 104);" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fw-bold" style="color:rgb(46, 150, 247);"> Shri Anil Kumar</h5>
+                                <p class="card-text text-center fw-bold">Hon’ble Cabinet Minister<br />DST, GoUP</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 tm hello w501 w100">
+
+                        <div class="card h-100 shadow rounded-0 p-2" style="">
+                            <img src="~/Content/images/Prof JP Pandey.jpg" class="card-img-top rounded-circle p-2 h-100"
+                                 style="border: 1px solid rgb(12, 209, 104);" height="280px" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fw-bold" style="color:rgb(46, 150, 247);"> Prof. J. P. Pandey</h5>
+                                <p class="card-text text-center fw-bold">CEO <br />Biotech Park, Lucknow</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- our Board Member -->
+<!-- service-->
+<div class="row dd">
+    <div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-sm-12 mt-5 mb-3">
+                    <h1 class="asi"><span class="border-line1 border-line" style="padding-bottom:10px;">Agriculture</span> Services Industry</h1>
+
+
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6 w100">
+                        <hr />
+                        <h4 class="text p-2" onmouseover="Ok1()" onmouseout="done1()" style=""><a href="">1. Agriculture & Health</a></h4>
+                        <hr>
+                        <h4 class="text p-2" onmouseover="Ok()" onmouseout="done()" style=""><a href="">2. Chemical & Metrical</a></h4>
+                        <hr>
+                        <h4 class="text p-2" onmouseover="Ok2()" onmouseout="done2()" style=""><a href="">3. Soil Analysis</a></h4>
+                        <hr>
+                        <h4 class="text p-2" onmouseover="Ok3()" onmouseout="done3()" style=""><a href="">4. Soil Tillage</a></h4>
+                        <hr>
+                    </div>
+                    <div class="col-md-6  w100 fh mx-auto text-center" style="position:relative;">
+
+                        <img src="~/Content/images/ag.jpeg" class="w-100 a  h-100 mx-auto a1" alt="">
+                        <img src="~/Content/images/chimacal.jpg" style="opacity: 0;" class="w-100  h-100 a a2" alt="">
+                        <img src="~/Content/images/soiltest.jpg" style="opacity: 0;" class="w-100 h-100 a a3" alt="">
+                        <img src="~/Content/images/soil.jpg" style="opacity: 0;" class="w-100 h-100 mx-auto a a4" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- service -->
+<!-- resarch project-->
+<div class="row mt-5 mb-4" style="background-image: linear-gradient(to right,rgb(4, 89, 209),rgb(18, 121, 5)); Height:auto;">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 p-3">
+                    <h1 class="text-center mt-4 text-light">Biotech Award Winning Research Project</h1>
+                    <section class="splide mt-2" id="slider3"
+                             aria-labelledby="carousel-heading">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="splide__slide p-3 pb-5">
+
+                                    <img src="~/Content/images/IMG_4830.jpg" class="w-100 h-100" alt="">
+
+                                </div>
+                                <div class="splide__slide p-3 pb-5">
+                                    <img src="~/Content/images/IMG_4822.jpg" class="w-100 h-100" alt="">
+
+                                </div>
+                                <div class="splide__slide p-3 pb-5">
+                                    <img src="~/Content/images/IMG_4799.jpg" class="w-100 h-100" alt="">
+
+
+
+                                </div>
+                                <div class="splide__slide p-3 pb-5">
+                                    <img src="~/Content/images/IMG_4841.jpg" class="w-100 h-100" alt="">
+
+
+
+                                </div>
+                                <div class="splide__slide p-3 pb-5">
+                                    <img src="~/Content/images/IMG_4758.jpg" class="w-100 h-100" alt="">
+
+
+
+                                </div>
+                                <div class="splide__slide p-3 pb-5">
+                                    <img src="~/Content/images/IMG_4773.jpg" class="w-100 h-100" alt="">
+
+                                </div>
+
+
+                            </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- resarch project -->
+<!-- News And Update-->
+<div class="row mt-5">
+    <div>
+        <div class="container">
+            <h2 class="mb-4 fw-bold"><span class="border-line1 border-line" style=" padding-bottom:5px; ">Latest News</span> And Updates</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4 mb-5 mt-4">
+                <div class="col">
+                    <div class="card border-0 h-100 shadow">
+                        <img src="~/Content/images/new1.jpeg" height="200vh" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">"On March 13, 2023, a lease was signed for Vatican Shona Agrotech to set up a tissue culture lab at Biotech Park, Lucknow."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 h-100 shadow">
+                        <img src="~/Content/images/new2.jpeg" height="200vh" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">"On February 24, 2023, Awanish Kumar Awasthi visited Biotech Park, Lucknow, and interacted with the incubatees there."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 h-100 shadow">
+                        <img src="~/Content/images/events.jpeg" height="200vh" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">"On February 16, 2023, Gene to Protein launched 'GreenRTM dye' and qPCR Mastermix at Biotech Park, inaugurated by Alok Kumar."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 h-100 shadow">
+                        <img src="~/Content/images/eventee.jpeg" height="200vh" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">"A two-day workshop on "Production & Cultivation of Cordyceps militaris" was organized from April 22 to 24, 2022."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-sm-12 mb-5 text-center">
+        <button style="height: 45px; width: 100px; background-image: linear-gradient(to right,rgb(4, 89, 209),rgb(18, 121, 5)); color:white; border:0px;">Read More</button>
+    </div>
+</div>
+<!-- News And Update -->
+<!-- client feedback-->
+<div class="row bg-color ">
+    <div>
+        <div class="container">
+            <h1 class="mt-4 text-light"><span class="border-line" style=" padding-bottom: 10px;">Training  </span>Programme For Students</h1>
+            <div class="row p-5 pt-3">
+                <div class="col-sm-12">
+                    <section class="splide mt-2" id="slider4"
+                             aria-labelledby="carousel-heading">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="splide__slide p-3 pb-5">
+
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <img src="~/Content/images/tra1.jpeg" class="card-img-top p-2" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center fw-bold">Biodiesel - Production  Testing</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="splide__slide p-3 pb-5">
+                                    <div class="col h-100">
+                                        <div class="card h-100">
+                                            <img src="~/Content/images/tra2.jpg" height="200px" class="card-img-top p-2" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Bioinformatics</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="splide__slide p-3 pb-5">
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <img src="~/Content/images/tra3.jpg" height="200px" class="card-img-top p-2" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Industrial Biotechnology</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="splide__slide p-3 pb-5">
+
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <img src="~/Content/images/tra5.jpeg" height="200px" class="card-img-top p-2" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Microbiology</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="splide__slide p-3 pb-5">
+
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <img src="~/Content/images/tra6.jpg" height="200px" class="card-img-top p-2" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Plant Tissue Culture</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="splide__slide p-3 pb-5">
+
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <img src="~/Content/images/download.jpeg" height="200px" class="card-img-top p-2" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Industrial Training</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+
+                    </section>
+                    <div class="col-sm-12 text-center mt-3">
+                        <button style="height: 45px; width: 100px; background-color:white; color:black; border:0px;">Read More</button>
+
+                    </div>
+                    @*<div class="row row-cols-1 row-cols-md-4 g-4">
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="..." class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-center">Biodiesel - Production  Testing</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="..." class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Bioinformatics</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="..." class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Industrial Biotechnology</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="..." class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Microbiology</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                         </div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- client feedback-->
+<!-- our Client-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 mt-5">
+            <h1 class="fw-bold"><span style="border-bottom:4px solid rgb(46, 150, 247); padding-bottom:5px;">Our</span> Clients</h1>
+
+            <section class="splide mt-2" id="slider2"
+                     aria-labelledby="carousel-heading">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide p-3 pb-5">
+
+                            <img src="~/Content/images/cp1.png" class="" width="250px" height="200px" alt="">
+
+                        </div>
+                        <div class="splide__slide p-3 pb-5">
+                            <img src="~/Content/images/cp2.jpeg" class="" width="250px" height="200px" alt="">
+
+                        </div>
+                        <div class="splide__slide p-3 pb-5">
+                            <img src="~/Content/images/cp3.jpg" class="" width="250px" height="200px" alt="">
+
+
+
+                        </div>
+                        <div class="splide__slide p-3 pb-5">
+                            <img src="~/Content/images/cp6.jpg" class="" width="250px" height="200px" alt="">
+
+
+
+                        </div>
+                        <div class="splide__slide p-3 pb-5">
+                            <img src="~/Content/images/cp5.jpg" class="" width="250px" height="200px" alt="">
+
+                        </div>
+                        <div class="splide__slide p-3 pb-5">
+                            <img src="~/Content/images/cl1.png" class="" width="250px" height="200px" alt="">
+
+                        </div>
+
+
+                    </div>
+            </section>
+        </div>
+    </div>
+</div>
+<!-- our Client -->
+<!--Modal-->
+
+
+
+<form action="~/home/indexsave" method="post">
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="border-radius:0px !important;">
+        <div class="modal-dialog" style="border-radius: 0px; background-image: linear-gradient(to right,rgb(4, 89, 209),rgb(18, 121, 5));">
+            <div class="modal-content" style="background-image: linear-gradient(to right,rgb(4, 89, 209),rgb(18, 121, 5)); color:white;">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Do You Have Any Query</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-2">
+                        <label for="recipient-name" class="col-form-label">Name:</label>
+                        <input type="text" class="form-control" name="name" placeholder="Enter Your Name" style="border: 1px solid black; border-radius: 0px; width:100%;">
+                    </div>
+                    <div class="mb-2">
+                        <label for="recipient-name" class="col-form-label">Mobile:</label>
+                        <input type="text" class="form-control" name="mobile" placeholder="Enter Your Mobile" style="width: 100%; border: 1px solid black; border-radius: 0px;">
+                    </div>
+                    <div class="mb-2">
+                        <label for="recipient-name" class="col-form-label">Email:</label>
+                        <input type="text" class="form-control" name="email" placeholder="Enter Your Email" style="width: 100%; border:1px solid black; border-radius:0px;">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" name="massege" placeholder="Enter Your Query" style="width: 100%; border: 1px solid black; border-radius: 0px;"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" style="background-color:white; color:black;" data-bs-dismiss="modal">Close</button>
+                    <input type="submit" value="Send Message" style="background-color:white; color:black;" class="btn btn-secondary" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<!--Modal-->
+
+
+
+<a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class=" btn btn-success fixed-btn3"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Enquire Now</a>
